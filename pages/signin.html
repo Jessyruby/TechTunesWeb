@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/signin.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <title>TechTunes</title>
+</head>
+<body>
+    
+    <header>
+
+        <i class="bi-headphones"></i>
+        
+        <nav class="menu">
+            <ul>
+                <li id="Home" ><a href="../pages/index.html" class="menu-item">Home</a></li>
+                <li id="Products"><a href="" class="menu-item">Products</a></li>
+                <li id="AboutUs"><a href="" class="menu-item">About Us</a></li>
+                <li id="Contact"><a href="" class="menu-item">Contact</a></li>
+                <li id="MyAccount"><a href="../pages/signup.html" class="menu-item">Sign Up</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main class="main-signin">
+
+        <section id="signin">
+
+            <div class="form-container">
+
+                <h1>Create new account</h1>
+
+                <p>Are you new here? <a href="../pages/signup.html">Click here</a></p>
+
+                <form  method="post" id="form">
+
+                    <div class="form-content">
+                        <label for="email">
+                        
+                            <div>
+                                <p>Email</p>
+                                <input type="email" id="email" name="email" oninput="checkEmail()" required>
+                            </div>
+
+                            <i class="bi-envelope"></i>
+                        
+                        </label>
+
+                        <a id="msgEmail" class="msg"></a>
+
+                    </div>
+
+                    <div class="form-content">
+                    
+                        <label for="password">
+                        
+                            <div>
+                                <p>Password</p>
+                                <input type="password" id="password" name="password" class="password-input" oninput="checkPassword()" required>
+                            </div>
+
+                            <i class="bi-eye-slash"></i>
+                            <i class="bi-eye"></i>
+                        
+                        </label>
+
+                        <a id="msgPassword" class="msg"></a>
+
+                    </div>
+                    
+                    <button type="submit">Login</button>
+
+                </form>
+            </div>
+
+            <div id="photo">
+                <img src="../img/frfef.png">
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div id="rodape">
+
+            <div id="footer-logo">
+                <h1 class="logo-title">TechTunes</h1>
+                <i class="bi-headphones"></i>
+            </div>
+    
+            <div id="footer-icons">
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-whatsapp"></i>
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-twitter-x"></i>
+            </div>
+
+            <p>Tech Tunes is dedicated to bringing you the latest and greatest in audio technology. Our mission is to provide an unparalleled listening experience with cutting-edge designs and innovative features.</p>
+
+        </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../js/signin.js"></script>
+    <script src="../js/script.js"></script>
+    
+</body>
+</html>
