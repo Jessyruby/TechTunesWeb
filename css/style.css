@@ -327,6 +327,7 @@ header {
     font-weight: 300;
     font-size: 12pt;
     width: 400px;
+    text-align: justify;
 }
 
 #people{
@@ -336,7 +337,7 @@ header {
     padding-top: 35px;
     background: #151515;
     padding-bottom: 80px;
-    
+    height: 840px;
 }
 
 
@@ -351,7 +352,7 @@ header {
 
 #people-text h1{
     font-size: 47pt;
-    margin-bottom: 50px;
+    margin-bottom: 53px;
     font-weight: 800;  
     line-height: 110%;
     margin-top: 20px;
@@ -364,11 +365,11 @@ header {
 }
 
 #people-text ul li{
-    font-size: 13pt;
+    font-size: 12pt;
     margin-bottom: 20px;
     font-weight: 300;
     list-style: none;
-    text-align: justify;
+    
     
 }
 
@@ -403,7 +404,7 @@ footer{
 #footer-logo{
     display: flex;
     align-items: center;
-    border: 2px solid #fff;
+    border: 2px solid #44067f;
     border-radius: 20px;
     padding: 1px 15px;
     margin-bottom: 10px;
@@ -432,12 +433,12 @@ footer{
 }
 
 #rodape p{
-    margin-top: 12px;
+    margin-top: 10px;
     color: #d8d6d6;
     font-family: "Quicksand", sans-serif;
     width: 63%;
     text-align: center;
-    font-size: 8.4pt;
+    font-size: 7pt;
 }
 
 /*////////////////////// SignUp ///////////////////////////////*/
