@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-@import url('/home/header.css');
-@import url('/home/main-banner.css');
-@import url('/home/offers.css');
-@import url('/home/Aboutus.css');
-@import url('/home/people.css');
-@import url('/home/footer.css');
+@import url('/css/home/header.css');
+@import url('/css/home/main-banner.css');
+@import url('/css/home/offers.css');
+@import url('/css/home/Aboutus.css');
+@import url('/css/home/people.css');
+@import url('/css/home/footer.css');
 
 @import url('/css/signup.css');
 @import url('/css/signin.css');

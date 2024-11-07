@@ -147,10 +147,6 @@ body {
     width: 100%;
 }
 
-footer{
-    background: #030512;
-}
-
 @media (min-width: 769px) {
     .form-container{
         width: 30%;
