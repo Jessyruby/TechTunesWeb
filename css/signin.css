@@ -21,3 +21,9 @@ body {
 footer{
     background: #030512;
 }
+
+@media (max-width: 769px) {
+    .main-signin #photo {
+        display: none;
+    }
+}
