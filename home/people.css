@@ -1,0 +1,96 @@
+#people{
+    display: flex;
+    align-items: center;
+    background: #151515;
+}
+
+#people-text{
+   color: #fff;
+   width: 40%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   font-family: "Inter", sans-serif;
+}
+
+#people-text h1{
+    font-weight: 800;  
+    line-height: 110%;
+}
+
+#people-text ul {
+    padding: 0;
+}
+
+#people-text ul li{
+    font-weight: 300;
+    list-style: none;  
+}
+
+#people-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#people-img img{
+    width: 100%;
+}
+
+@media (min-width: 769px) {
+    #people{
+        justify-content: space-around;
+        height: 840px;
+        padding-top: 35px;
+        padding-bottom: 80px;
+    }
+
+    #people-text h1{
+        font-size: 47pt;
+        margin-bottom: 53px;
+        margin-top: 20px;
+        width: 537px;
+    }
+
+    #people-text ul {
+        width: 460px;
+    }
+    
+    #people-text ul li{
+        font-size: 12pt;
+        margin-bottom: 20px;
+    }
+    
+    #people-img {
+        width: 40%;
+        margin-left: -100px;
+    }
+}
+
+@media (max-width: 769px) {
+    #people{
+        flex-direction: column;
+        justify-content: space-around;
+        height: 40%;
+        padding-top: 20px;
+    }
+
+    #people-text h1{
+        font-size: 19pt;
+        width: 224px;
+        text-align: center;
+    }
+    
+    #people-text ul {
+        width: 220px;
+    }
+    
+    #people-text ul li{
+        font-size: 7pt;
+        margin-bottom: 10px;
+    }
+
+    #people-img {
+        width: 60%;
+    }
+}

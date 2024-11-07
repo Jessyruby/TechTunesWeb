@@ -2,6 +2,166 @@ body {
     background: #010207;
 }
 
+.main-signup, .main-signin{
+    background: #010207;
+    padding-bottom: 0;
+}
+
+#signup, #signin{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 0;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: center;
+    width: 30%;
+    height: 663px;
+    color: #dad9d9;
+    font-family: "Quicksand", sans-serif;
+    margin: 0;
+    margin-left: 140px;
+}
+
+.form-container h1{
+    font-size: 32pt;
+    font-weight: 900;
+    margin: 0;
+    margin-left: -20px;
+}
+
+.form-container p{
+    font-size: 11pt;
+}
+
+.form-container p a{
+    text-decoration: none;
+}
+
+.form-container p a:hover{
+    color: #8125c3;
+}
+
+.form-container form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-content {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-container form label{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+    padding: 12px 20px;
+    background: #151515;
+    border-radius: 15px;
+    margin: 0;
+    border: 2px solid transparent;
+    transition: border-color 0.3s;
+}
+
+
+.form-container form label div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form-container form label i{
+    color: #a6a6a6;
+    font-size: 12pt;
+}
+
+.bi-eye-slash{
+    cursor: pointer;
+}
+
+.bi-eye{
+    display: none;
+    cursor: pointer;
+}
+
+.form-container form label div p{
+    font-size: 10pt;
+    color: #5c5b5b;
+    margin: 0;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.form-container form button{
+    background: #8125c3;
+    border: 3px solid #8125c3;
+    padding: 13px 28px;
+    border-radius: 30px;
+    font-size: 10pt;
+    color: #dad9d9;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.form-container form button:hover{
+    background: #141414;
+    transition: 200ms;
+}
+
+.form-container form input{
+    background: none;
+    border: none;
+    color: #fff;
+}
+
+.form-container form div input:focus{
+    outline: none
+}
+
+.form-content a {
+    font-size: 7pt;
+    color: red; 
+    margin-left: 15px;
+    position: absolute;
+    margin-top: 69px;
+}
+
+/* Remove ícone de olho padrão nos navegadores */
+.password-input::-ms-reveal,
+.password-input::-ms-clear {
+    display: none; /* Remove ícones de senha no IE */
+}
+
+.password-input::-webkit-credentials-auto-fill-button {
+    visibility: hidden; /* Remove ícones de senha no Chrome */
+}
+
+.password-input::-webkit-search-cancel-button,
+.password-input::-webkit-search-decoration,
+.password-input::-webkit-search-results-button,
+.password-input::-webkit-search-results-decoration {
+    display: none; /* Remove ícones de senha no Safari */
+}
+
+#photo {
+    display: flex;
+    width: 39%; 
+    margin: 0;
+}
+
+#photo img{
+    width: 100%;
+}
+
 footer{
     background: #030512;
 }

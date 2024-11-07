@@ -1,0 +1,91 @@
+header {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.bi-headphones{
+    color: #edecec;
+}
+
+.menu{
+    margin-left: auto;
+}
+
+.menu ul li{
+    display: inline;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 12pt;
+    margin-left: 30px;
+    padding-bottom: 4px;
+}
+
+.menu ul li a{
+    color: #edecec;
+    font-weight: 400;
+    font-size: 12pt;
+    text-decoration: none;
+}
+
+.menu ul li:hover{
+    color: #551981;
+    cursor: pointer;
+}
+
+#MyAccount{
+    border-radius: 50px;
+    background: #551981;
+    border: 3px solid #551981;
+    color: #fff;
+}
+
+#MyAccount:hover{
+    background: #8125c3;
+    color: #fff;
+    transition: 300ms;
+}
+
+@media (min-width: 769px) {
+
+    header{
+        height: 10vh;
+        padding-right: 80px;
+    }
+
+    .bi-headphones{
+        font-size: 22pt;
+        margin-left: 33px;
+    }
+
+    #MyAccount{
+        padding: 12px 22px;
+    }
+}
+
+
+@media (max-width: 769px) {
+
+    header{
+        height: 8vh;
+        justify-content: center;
+        padding-right: 0px;
+    }
+
+    .bi-headphones{
+        font-size: 20pt;
+        margin-left: 20px;
+    }
+
+    .menu {
+        padding-right: 20px;
+    }
+
+    #Home, #Products, #AboutUs, #Contact{
+        display: none;
+    }
+
+    #MyAccount{
+        padding: 6px 12px;
+    }
+}

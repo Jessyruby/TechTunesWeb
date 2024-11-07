@@ -1,0 +1,158 @@
+#offers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#offers h1 {
+    color: #dad9d9;
+    font-weight: 600;  
+    font-family: "Inter", sans-serif;
+    line-height: 0%;
+}
+
+
+#Products-banner{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#Products-banner i{
+    color: #fff;
+    font-size: 40pt;
+}
+
+.bi-arrow-left-circle:hover + .bi-arrow-left-circle-fill{
+    display: block;
+}
+
+.bi-arrow-left-circle:hover{
+    display: none;
+}
+
+.bi-arrow-right-circle:hover + .bi-arrow-right-circle-fill{
+    display: block;
+}
+
+.bi-arrow-right-circle:hover{
+    display: none;
+}
+
+.bi-arrow-left-circle-fill{
+    display: none;
+}
+
+.bi-arrow-right-circle-fill{
+    display: none;
+}
+
+#Products-banner .product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #2e2e2e;
+    border-radius: 20%;
+    border-bottom: 2px solid #8A2BE2;
+}
+
+.product-img{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.product-img img {
+    position: relative;
+    width: 50%;
+}
+
+.product-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Quicksand", sans-serif;
+    color: #dad9d9;
+}
+
+.product-text h2{
+    margin-bottom: 0px;
+    font-weight: 600;
+}
+
+.product-text p{
+    margin-top: 10px;
+    margin-bottom: 50px;
+    font-weight: 400;
+    font-size: 8pt;
+    width: 152px;
+}
+
+.product-button button{
+    background: #8125c3;
+    padding: 10px 25px;
+    border-radius: 10px;
+    font-size: 10pt;
+    border: none;
+    color: #dad9d9;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.product-button button:hover{
+    background: #551981;
+}
+
+@media (min-width: 769px) {
+    #offers h1 {
+        font-size: 70pt;
+        margin-top: 130px;
+    }
+    
+    
+    #Products-banner{
+        margin-bottom: 200px;
+        width: 80%;
+    }
+
+    #Products-banner .product{
+        width: 300px;
+        height: 300px;
+        padding-top: 30px;
+    }
+}
+
+@media (max-width: 769px) {
+    #offers h1 {
+        font-size: 40pt;
+        margin-top: 130px;
+    }
+    
+    #Products-banner{
+        flex-direction: column;
+        margin-bottom: 200px;
+        width: 80%;
+    }
+
+    .bi-arrow-left-circle {
+        display: none;
+    }
+
+    .bi-arrow-right-circle {
+        display: none;
+    }
+
+    #Products-banner .product{
+        width: 240px;
+        height: 220px;
+        margin-top: 60px;
+        padding-top: 30px;
+    }
+
+    .product-button {
+        margin-top: -40px;
+    }
+}

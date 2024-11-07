@@ -6,6 +6,18 @@ body {
     margin-left: 40px;
 }
 
+.main-signin #photo {
+    display: flex;
+    width: 39%;
+    height: 20%;
+    margin-top: 40px;
+}
+
+.main-signin #photo img{
+    width: 100%;
+    filter: brightness(0.7);
+}
+
 footer{
     background: #030512;
 }
