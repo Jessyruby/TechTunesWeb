@@ -41,7 +41,7 @@ header {
 }
 
 #MyAccount:hover{
-    background: #8125c3;
+    background: #8125c300;
     color: #fff;
     transition: 300ms;
 }

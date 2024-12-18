@@ -40,7 +40,7 @@ eye_open.forEach(button => {
    
 })
 
-
+/*
 document.getElementById('name').addEventListener('focus', () => {
     document.querySelector(".bi-person-circle").style.color = "#8125c3"
 })
@@ -55,10 +55,34 @@ document.getElementById('email').addEventListener('focus', () => {
 
 document.getElementById('email').addEventListener('blur', () => {
     document.querySelector(".bi-envelope").style.color = "#a6a6a6"
-})
+})*/
+
+////////////////////////////////////////////////////////////////////
 
 
 function scrollToSection(id) {
     const element = document.getElementById(id);
     element.scrollIntoView({ behavior: 'smooth' });
 }
+
+
+////////////////////////////////////////////////////////////////////
+
+const productContainer = document.querySelectorAll('.product-container')
+
+const bLeft = document.getElementById('bLeft')
+const bRight = document.getElementById('bRight')
+
+productContainer.forEach( (item) => {
+    let containerDimensions = item.getBoundingClientRect()
+    let containerWidth = containerDimensions.width
+
+    bLeft.addEventListener('click', () => {
+        item.scrollLeft -= containerWidth
+    })
+
+    bRight.addEventListener('click', () => {
+        item.scrollLeft += containerWidth
+    })
+
+})

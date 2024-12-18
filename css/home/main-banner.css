@@ -25,7 +25,7 @@
 }
 
 #banner-text a{
-    background: #141414;
+    background: #7630cc;
     border: 3px solid #7630cc;
     color: #dad9d9;
     border-radius: 50px;
@@ -33,8 +33,7 @@
 }
 
 #banner-text a:hover{
-    background: #7630cc;
-    border: 3px solid #7630cc;
+    background: #141414;
     transition: 300ms;
     cursor: pointer;
 }

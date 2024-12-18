@@ -24,31 +24,37 @@
     font-size: 40pt;
 }
 
-.bi-arrow-left-circle:hover + .bi-arrow-left-circle-fill{
+.bi-arrow-left-circle-fill, 
+.bi-arrow-right-circle-fill {
+    display: none;
+}
+
+#bLeft:hover .bi-arrow-left-circle, 
+#bRight:hover .bi-arrow-right-circle{
+    display: none;
+}
+
+#bLeft:hover .bi-arrow-left-circle-fill, 
+#bRight:hover .bi-arrow-right-circle-fill{
     display: block;
 }
 
-.bi-arrow-left-circle:hover{
-    display: none;
-}
-
-.bi-arrow-right-circle:hover + .bi-arrow-right-circle-fill{
+#bLeft .bi-arrow-left-circle, 
+#bRight .bi-arrow-right-circle{
     display: block;
 }
 
-.bi-arrow-right-circle:hover{
+#bLeft .bi-arrow-left-circle-fill, 
+#bRight .bi-arrow-right-circle-fill{
     display: none;
 }
 
-.bi-arrow-left-circle-fill{
-    display: none;
+.product-container {
+    display: flex;
+    align-items: center;
 }
 
-.bi-arrow-right-circle-fill{
-    display: none;
-}
-
-#Products-banner .product{
+.product{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -56,6 +62,8 @@
     background: #2e2e2e;
     border-radius: 20%;
     border-bottom: 2px solid #8A2BE2;
+    flex-shrink: 0; 
+    flex-grow: 0;
 }
 
 .product-img{
@@ -90,6 +98,11 @@
     width: 152px;
 }
 
+.product-button {
+    display: flex;
+    justify-content: center;
+}
+
 .product-button button{
     background: #8125c3;
     padding: 10px 25px;
@@ -112,16 +125,22 @@
         margin-top: 130px;
     }
     
-    
     #Products-banner{
         margin-bottom: 200px;
         width: 80%;
     }
 
-    #Products-banner .product{
-        width: 300px;
+    .product-container {
+        width: 86%;
+        overflow: hidden;
+        scroll-behavior: smooth;
+    }    
+
+    .product{
+        width: 29%;
         height: 300px;
         padding-top: 30px;
+        margin: 14px 20px;
     }
 }
 
@@ -145,14 +164,26 @@
         display: none;
     }
 
+    .product-container {
+        flex-direction: column;
+        width: 80%;
+        
+    }   
+
     #Products-banner .product{
-        width: 240px;
-        height: 220px;
         margin-top: 60px;
         padding-top: 30px;
     }
 
     .product-button {
         margin-top: -40px;
+    }
+
+    #bLeft {
+        display: none;
+    }
+
+    #bRight {
+        display: none;
     }
 }
