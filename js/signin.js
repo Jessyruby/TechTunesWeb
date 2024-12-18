@@ -25,8 +25,6 @@ form.addEventListener('submit', (event) => {
                 alert('Login com sucesso!')
             }
                 
-
-            //window.location.href = 'dashboard.html';  // Redireciona para a página principal após o login
         })
         .catch(error => {
             console.error('Erro no login:', error.response.data);

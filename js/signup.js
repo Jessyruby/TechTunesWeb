@@ -24,7 +24,6 @@ form.addEventListener('submit', (event) => {
         })
         .then(response => {
             alert('Cadastro realizado com sucesso!');
-            //window.location.href = 'login.html';  // Redireciona para a página de login
         })
         .catch(error => {
             console.error('Erro no cadastro:', error.response.data);
@@ -144,3 +143,21 @@ function errorInput(messagem, label, textMessage){
     textMessage.innerText = messagem
     label.style.borderColor = 'red'
 }
+
+/////////////////////////////////////////////////////
+
+username.addEventListener('focus', () => {
+    document.querySelector(".bi-person-circle").style.color = "#8125c3"
+})
+
+username.addEventListener('blur', () => {
+    document.querySelector(".bi-person-circle").style.color = "#a6a6a6"
+})
+
+email.addEventListener('focus', () => {
+    document.querySelector(".bi-envelope").style.color = "#8125c3"
+})
+
+email.addEventListener('blur', () => {
+    document.querySelector(".bi-envelope").style.color = "#a6a6a6"
+})

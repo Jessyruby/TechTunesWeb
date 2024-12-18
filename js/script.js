@@ -40,23 +40,6 @@ eye_open.forEach(button => {
    
 })
 
-/*
-document.getElementById('name').addEventListener('focus', () => {
-    document.querySelector(".bi-person-circle").style.color = "#8125c3"
-})
-
-document.getElementById('name').addEventListener('blur', () => {
-    document.querySelector(".bi-person-circle").style.color = "#a6a6a6"
-})
-
-document.getElementById('email').addEventListener('focus', () => {
-    document.querySelector(".bi-envelope").style.color = "#8125c3"
-})
-
-document.getElementById('email').addEventListener('blur', () => {
-    document.querySelector(".bi-envelope").style.color = "#a6a6a6"
-})*/
-
 ////////////////////////////////////////////////////////////////////
 
 
