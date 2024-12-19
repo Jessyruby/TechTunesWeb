@@ -2,9 +2,13 @@ const form = document.getElementById('form')
 const email = document.getElementById('email')
 const password = document.getElementById('password')
 
+const loadingOverlay = document.getElementById('loading');
+
 form.addEventListener('submit', (event) => {
 
     event.preventDefault()
+
+    loadingOverlay.style.display = 'flex';
 
         axios.post('https://techtunes.onrender.com/user/signin', {
             email: email.value,
@@ -20,15 +24,26 @@ form.addEventListener('submit', (event) => {
                 checkEmail(message)
                 checkPassword(message)
 
+
             } else {
 
                 alert('Login com sucesso!')
+
+                localStorage.setItem('isLoggedIn', 'true'); 
+                window.location.href = '../pages/index.html';
+
             }
                 
         })
         .catch(error => {
             console.error('Erro no login:', error.response.data);
             alert('Erro ao realizar login. Verifique suas credenciais.');
+
+        })
+
+        .finally(() => {
+
+            loadingOverlay.style.display = 'none';
         });
     
 })
@@ -43,6 +58,7 @@ function checkEmail(message) {
     if(message == 'ocorreu um erro durante a verificação do usuário existente!'){
 
         errorInput('Email invalido!', label, textMessage)
+        loadingOverlay.style.display = 'none';
 
     } else {
 
@@ -62,14 +78,13 @@ function checkPassword(message) {
     if(message == 'Senha invalida!'){
 
         errorInput(message, label, textMessage)
+        loadingOverlay.style.display = 'none';
 
     } else {
 
         textMessage.innerText = ''
         label.style.borderColor = 'transparent'
-
     }
-    
 }
 
 function errorInput(messagem, label, textMessage){
@@ -77,3 +92,4 @@ function errorInput(messagem, label, textMessage){
     textMessage.innerText = messagem
     label.style.borderColor = 'red'
 }
+

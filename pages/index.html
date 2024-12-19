@@ -11,9 +11,7 @@
 </head>
 
 <body>
-
     <header>
-
         <i class="bi-headphones"></i>
         
         <nav class="menu">
@@ -22,10 +20,16 @@
                 <li id="Products" onclick="scrollToSection('offers')">Products</li>
                 <li id="AboutUs" onclick="scrollToSection('Aboutus')">About Us</li>
                 <li id="Contact" onclick="scrollToSection('rodape')">Contact</li>
-                <li ><a id="MyAccount" href="../pages/signup.html">Sign Up</a></li>
+                <li><a id="MyAccount" href="../pages/signup.html">Sign Up</a></li>
+                <li id="user-info">
+                    <i class="bi bi-person-circle" id="usericon" onclick="buttonDisplay()"></i>
+                    <span id="display">
+                        <p>Logoup</p>
+                        <i class="bi bi-x-circle"></i>
+                    </span>
+                </li>
             </ul>
         </nav>
-
     </header>
 
     <main>
@@ -61,15 +65,12 @@
             </div>
 
             <div id="banner-img">
-
-                <img src="../img/R.png">
-                
+                <img src="../img/R.png">     
             </div>
 
         </section>
 
         <section id="offers">
-
             <h1>Offers</h1>
 
             <div id="Products-banner">
@@ -184,7 +185,6 @@
         </section>
 
         <section id="Aboutus">
-
             <div id="Aboutus-img">
                 <img src="../img/Downloader-La-671878.jpg">
             </div>
@@ -197,7 +197,6 @@
         </section>
 
         <section id="people">
-
             <div id="people-text">
                 <h1>At FutureSound Tech, we prioritize</h1>
                 <ul>

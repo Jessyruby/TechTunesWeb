@@ -18,17 +18,28 @@
         
         <nav class="menu">
             <ul>
-                <li id="Home" ><a href="../pages/index.html" class="menu-item">Home</a></li>
-                <li id="Products"><a href="" class="menu-item">Products</a></li>
-                <li id="AboutUs"><a href="" class="menu-item">About Us</a></li>
-                <li id="Contact"><a href="" class="menu-item">Contact</a></li>
-                <li id="MyAccount"><a href="../pages/signup.html" class="menu-item">Sign Up</a></li>
+                <li id="Home"><a href="../pages/index.html">Home</a></li>
+                <li id="Products"><a href="">Products</a></li>
+                <li id="AboutUs"><a href="">About Us</a></li>
+                <li id="Contact"><a href="">Contact</a></li>
+                <li><a id="MyAccount" href="../pages/signup.html">Sign Up</a></li>
+                <li id="user-info">
+                    <i class="bi bi-person-circle" onclick="buttonDisplay()"></i>
+                    <span id="display">
+                        <p>Logoup</p>
+                        <i class="bi bi-x-circle"></i>
+                    </span>
+                </li>
             </ul>
         </nav>
 
     </header>
 
     <main class="main-signin">
+
+        <div id="loading">
+            <div class="spinner"></div>
+        </div>
 
         <section id="signin">
 
@@ -45,7 +56,7 @@
                         
                             <div>
                                 <p>Email</p>
-                                <input type="email" id="email" name="email" oninput="checkEmail()" required>
+                                <input type="email" id="email" name="email" oninput="checkEmail()" autocomplete="email" required>
                             </div>
 
                             <i class="bi-envelope"></i>
@@ -62,7 +73,7 @@
                         
                             <div>
                                 <p>Password</p>
-                                <input type="password" id="password" name="password" class="password-input" oninput="checkPassword()" required>
+                                <input type="password" id="password" name="password" class="password-input" oninput="checkPassword()" autocomplete="current-password" required>
                             </div>
 
                             <i class="bi-eye-slash"></i>

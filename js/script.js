@@ -69,3 +69,42 @@ productContainer.forEach( (item) => {
     })
 
 })
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const isLoggedIn = localStorage.getItem('isLoggedIn');
+
+    const userIcon = document.getElementById('user-info');
+    const but = document.getElementById('MyAccount')
+
+    const user = document.getElementById('usericon')
+    const Display = document.getElementById('display')
+
+    if (isLoggedIn === 'true') {
+        
+        but.style.display = 'none';
+        userIcon.style.display = 'inline';
+
+        user.addEventListener('click', () => {
+            Display.style.display = 'block'
+        })
+        
+        Display.querySelector('i').addEventListener('click', () => {
+            Display.style.display = 'none'
+        })
+
+    } else {
+
+        but.style.display = 'inline';
+        userIcon.style.display = 'none';
+    }
+
+    Display.querySelector('p').addEventListener('click', () => {
+        localStorage.setItem('isLoggedIn', 'false'); 
+        window.location.reload();
+
+    })
+        
+})
+
+

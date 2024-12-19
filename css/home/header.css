@@ -46,6 +46,51 @@ header {
     transition: 300ms;
 }
 
+#user-info {
+    display: none;
+    margin: 1px;
+}
+
+#user-info i{
+    font-size: 22pt;
+    position: relative;
+    top: 5px;
+}
+
+#display {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 45px;
+    margin-top: 20px;
+    border: 1px solid #551981;
+    border-top: none;
+    height: 63px;
+}
+
+#display p {
+    padding: 8px 20px;
+    color: #fff;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+#display p:hover {
+    background: #551981;
+    transition: 300ms;
+    color: #fff;
+}
+
+#display i {
+    margin-left: 35px;
+    font-size: 16pt;
+    color: #fff;
+}
+
+#display i:hover {
+    color: #a02d2d;
+}
+
 @media (min-width: 769px) {
 
     header{

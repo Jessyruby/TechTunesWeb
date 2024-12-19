@@ -4,9 +4,13 @@ const email = document.getElementById('email')
 const password = document.getElementById('password')
 const passwordConfirm = document.getElementById('password-confirm')
 
+const loadingOverlay = document.getElementById('loading');
+
 form.addEventListener('submit', (event) => {
 
     event.preventDefault()
+
+    loadingOverlay.style.display = 'flex';
 
     const isUsernameValid = checkUsername();
     const isEmailValid = checkEmail();
@@ -14,7 +18,6 @@ form.addEventListener('submit', (event) => {
     const isPasswordConfirmValid = checkPasswordConfirm();
 
     if (isUsernameValid && isEmailValid && isPasswordValid && isPasswordConfirmValid) {
-        alert('Registration successful!');
 
         axios.post('https://techtunes.onrender.com/user/signup', {
             name: username.value,
@@ -23,12 +26,31 @@ form.addEventListener('submit', (event) => {
             passwordConfirm: passwordConfirm.value
         })
         .then(response => {
-            alert('Cadastro realizado com sucesso!');
+            
+            const result = response.data
+            const { message, status} = result
+
+            if (status !== 'SUCCESS') {
+                
+                alert(message);
+
+
+            } else {
+
+                alert('Cadastro realizado com sucesso!');
+                window.location.href = "../pages/signin.html"
+            }
+            
         })
         .catch(error => {
-            console.error('Erro no cadastro:', error.response.data);
-            alert('Erro ao realizar cadastro. Verifique os dados e tente novamente.');
+            console.error('Erro no cadastro:', error.response?.data || error.message);
+            alert(error.response?.data?.message || 'Erro técnico. Tente novamente mais tarde.');
+       
+        })
+        .finally(() => {
+            loadingOverlay.style.display = 'none';
         });
+
     }
 })
 

@@ -21,13 +21,24 @@
                 <li id="Products"><a href="">Products</a></li>
                 <li id="AboutUs"><a href="">About Us</a></li>
                 <li id="Contact"><a href="">Contact</a></li>
-                <li id="MyAccount"><a href="../pages/signup.html">Sign Up</a></li>
+                <li><a id="MyAccount" href="../pages/signin.html">Sign In</a></li>
+                <li id="user-info">
+                    <i class="bi bi-person-circle" onclick="buttonDisplay()"></i>
+                    <span id="display">
+                        <p>Logoup</p>
+                        <i class="bi bi-x-circle"></i>
+                    </span>
+                </li>
             </ul>
         </nav>
 
     </header>
 
     <main class="main-signup">
+
+        <div id="loading">
+            <div class="spinner"></div>
+        </div>
 
         <section id="signup">
 
@@ -45,7 +56,7 @@
                         
                             <div>
                                 <p>Name</p>
-                                <input type="text" id="name" name="name" oninput="checkUsername()" > 
+                                <input type="text" id="name" name="name" oninput="checkUsername()" autocomplete="username"> 
                             </div>
     
                             <i class="bi-person-circle"></i> 
@@ -62,7 +73,7 @@
                         
                             <div>
                                 <p>Email</p>
-                                <input type="email" id="email" name="email" oninput="checkEmail()">
+                                <input type="email" id="email" name="email" oninput="checkEmail()" autocomplete="email">
                             </div>
     
                             <i class="bi-envelope"></i>
@@ -79,7 +90,7 @@
                         
                             <div>
                                 <p>Password</p>
-                                <input type="password" id="password" name="password" class="password-input" oninput="checkPassword()">
+                                <input type="password" id="password" name="password" class="password-input" autocomplete="new-password" oninput="checkPassword()">
                             </div>
     
                             <i class="bi-eye-slash"></i>
@@ -98,7 +109,7 @@
 
                             <div>
                                 <p>Password confirm</p>
-                                <input type="password" id="password-confirm" name="password-confirm" class="password-input" oninput="checkPasswordConfirm()">
+                                <input type="password" id="password-confirm" name="password-confirm" class="password-input" oninput="checkPasswordConfirm()" autocomplete="new-password">
                             </div>
     
                             <i class="bi-eye-slash"></i>
