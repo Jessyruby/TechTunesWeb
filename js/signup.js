@@ -37,7 +37,6 @@ form.addEventListener('submit', (event) => {
 
             } else {
 
-                alert('Cadastro realizado com sucesso!');
                 window.location.href = "../pages/signin.html"
             }
             
@@ -182,4 +181,48 @@ email.addEventListener('focus', () => {
 
 email.addEventListener('blur', () => {
     document.querySelector(".bi-envelope").style.color = "#a6a6a6"
+})
+
+//////////////////////////////////////////////////////////////////
+
+const eye_close = document.querySelectorAll('.bi-eye-slash')
+const eye_open = document.querySelectorAll('.bi-eye')
+
+const password_input = document.querySelectorAll('.password-input')
+const inputs = document.querySelectorAll('.input-field');
+
+
+eye_close.forEach(button => {
+
+    button.addEventListener('click', () => {
+        
+        eye_close.forEach(button => {
+            button.style.display = 'none'
+        })
+        eye_open.forEach(button => {
+            button.style.display = 'block'
+        });
+        password_input.forEach(input => {
+            input.setAttribute('type', 'text');
+        })
+    })
+  
+})
+
+eye_open.forEach(button => {
+
+    button.addEventListener('click', () => {
+
+        eye_close.forEach(button => {
+            button.style.display = 'block'
+        })
+        eye_open.forEach(button => {
+            button.style.display = 'none'
+        });
+
+        password_input.forEach(input => {
+            input.setAttribute('type', 'password');
+        })
+    });
+   
 })

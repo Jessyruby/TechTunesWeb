@@ -12,23 +12,30 @@
 
 <body>
     <header>
-        <i class="bi-headphones"></i>
+        <img src="/img/headphones.png" class="bi-headphones">
         
         <nav class="menu">
             <ul>
-                <li id="Home" onclick="scrollToSection('home')">Home</li>
-                <li id="Products" onclick="scrollToSection('offers')">Products</li>
-                <li id="AboutUs" onclick="scrollToSection('Aboutus')">About Us</li>
-                <li id="Contact" onclick="scrollToSection('rodape')">Contact</li>
-                <li><a id="MyAccount" href="../pages/signup.html">Sign Up</a></li>
-                <li id="user-info">
-                    <i class="bi bi-person-circle" id="usericon" onclick="buttonDisplay()"></i>
-                    <span id="display">
-                        <p>Logoup</p>
-                        <i class="bi bi-x-circle"></i>
-                    </span>
-                </li>
+                <li id="Home" onclick="scrollToSection('home')"><a>Home</a></li>
+                <li id="Products" onclick="scrollToSection('offers')"><a>Products</a></li>
+                <li id="AboutUs" onclick="scrollToSection('Aboutus')"><a>About Us</a></li>
+                <li id="Contact" onclick="scrollToSection('rodape')"><a>Contact</a></li>
             </ul>
+
+            <div class="MyAccount"><a id="MyAccount" href="../pages/signup.html">Sign Up</a></div>
+
+            <div id="user-info">
+                <i class="bi bi-person" id="usericon" ></i>
+                <span id="display">
+                    <p>Logoup</p>
+                    <i class="bi bi-x-circle"></i>
+                </span>
+            </div>
+
+            <div id="cart">
+                <a href="/pages/cart.html"><i class="bi-cart2"></i></a>
+                <span>0</span>
+            </div>
         </nav>
     </header>
 
@@ -93,7 +100,7 @@
                         </div>
     
                         <div class="product-button">
-                            <button>Buy</button>
+                            <button onclick="window.location.href='product.html?name=Headphone+1&image=../img/headphone.png&description=Discover+the+best+sound&price=99.99'">Buy</button>
                         </div>
     
                     </div>
@@ -109,7 +116,7 @@
                         </div>
     
                         <div class="product-button">
-                            <button>Buy</button>
+                            <button onclick="window.location.href='product.html?name=Headphone+2&image=../img/headphone-2.png&description=Discover+the+best+sound&price=209.99'">Buy</button>
                         </div>
                     </div>
     
@@ -124,7 +131,7 @@
                         </div>
     
                         <div class="product-button">
-                            <button>Buy</button>
+                            <button onclick="window.location.href='product.html?name=Headphone+3&image=../img/headphone-3.png&description=Discover+the+best+sound&price=80.90'">Buy</button>
                         </div>
                     </div>
 
@@ -139,7 +146,7 @@
                         </div>
     
                         <div class="product-button">
-                            <button>Buy</button>
+                            <button onclick="window.location.href='product.html?name=Headphone+4&image=../img/headphone-4.png&description=Discover+the+best+sound&price=90.00'">Buy</button>
                         </div>
                     </div>
 
@@ -154,7 +161,7 @@
                         </div>
     
                         <div class="product-button">
-                            <button>Buy</button>
+                            <button onclick="window.location.href='product.html?name=Headphone+5&image=../img/headphone-5.png&description=Discover+the+best+sound&price=200.00'">Buy</button>
                         </div>
                     </div>
 
@@ -169,7 +176,7 @@
                         </div>
     
                         <div class="product-button">
-                            <button>Buy</button>
+                            <button onclick="window.location.href='product.html?name=Headphone+6&image=../img/headphone-6.png&description=Discover+the+best+sound&price=98.00'">Buy</button>
                         </div>
                     </div>
                
@@ -221,7 +228,7 @@
 
             <div id="footer-logo">
                 <h1 class="logo-title">TechTunes</h1>
-                <i class="bi-headphones"></i>
+                <img src="/img/headphones.png" class="bi-headphones">
             </div>
 
             <p>Tech Tunes is dedicated to bringing you the latest and greatest in audio technology. Our mission is to provide an unparalleled listening experience with cutting-edge designs and innovative features.</p>
@@ -236,8 +243,9 @@
         </div>
 
     </footer>
-
-    <script src="../js/script.js"></script>
+    
+    <script src="/js/main.js"></script>
+    <script src="/js/script.js"></script>
 
 </body>
 

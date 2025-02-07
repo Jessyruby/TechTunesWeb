@@ -1,18 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
 #main-banner{
     display: flex;
 }
 
 #banner-text h1, #banner-text h2 {
     color: #dad9d9;
-    font-weight: 600;  
-    font-family: "Inter", sans-serif;
+    font-weight: 800;  
+    font-family: "Sora", serif;
+    letter-spacing: -15px;
     text-transform: uppercase;
     width: 600px;
     line-height: 0%;
 }
 
 #banner-text h2{
-    text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+    text-shadow: 1px 0 #fff, -1px 0 #fff, 0 1px #fff, 0 -1px #fff,
              1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
     color: #141414;
     margin-bottom: 88px;

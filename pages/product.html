@@ -5,13 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/signin.css">
+    <link rel="stylesheet" href="../css/product.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-    <title>TechTunes</title>
+    <title>Product</title>
 </head>
 <body>
-    
     <header>
 
         <img src="/img/headphones.png" class="bi-headphones">
@@ -25,7 +24,7 @@
             </ul>
 
             <div class="MyAccount"><a id="MyAccount" href="../pages/signup.html">Sign Up</a></div>
-
+z
             <div id="user-info">
                 <i class="bi bi-person" id="usericon" ></i>
                 <span id="display">
@@ -36,73 +35,27 @@
 
             <div id="cart">
                 <a href="/pages/cart.html"><i class="bi-cart2"></i></a>
-                <span>0</span>
+                <span >0</span>
             </div>
         </nav>
 
     </header>
 
-    <main class="main-signin">
+    <main>
+        <div class="container">
 
-        <div id="loading">
-            <div class="spinner"></div>
+            <div class="image-container">
+                <img id="product-image" src="../img/headphone.png" alt="Product Image">
+            </div>
+
+            <div class="details">
+                <h1 class="product-title" id="product-name">Product Name</h1>
+                <p class="description" id="product-description">Product Description</p>
+                <p class="price" id="product-price">R$ 0,00</p>
+                <button class="cart-button">Adicionar no carrinho</button>
+                <button class="buy-button">Compra agora</button>
+            </div>
         </div>
-
-        <section id="signin">
-
-            <div class="form-container">
-
-                <h1>Create new account</h1>
-
-                <p>Are you new here? <a href="../pages/signup.html">Click here</a></p>
-
-                <form  method="post" id="form">
-
-                    <div class="form-content">
-                        <label for="email">
-                        
-                            <div>
-                                <p>Email</p>
-                                <input type="email" id="email" name="email" oninput="checkEmail()" autocomplete="email" required>
-                            </div>
-
-                            <i class="bi-envelope"></i>
-                        
-                        </label>
-
-                        <a id="msgEmail" class="msg"></a>
-
-                    </div>
-
-                    <div class="form-content">
-                    
-                        <label for="password">
-                        
-                            <div>
-                                <p>Password</p>
-                                <input type="password" id="password" name="password" class="password-input" oninput="checkPassword()" autocomplete="current-password" required>
-                            </div>
-
-                            <i class="bi-eye-slash"></i>
-                            <i class="bi-eye"></i>
-                        
-                        </label>
-
-                        <a id="msgPassword" class="msg"></a>
-
-                    </div>
-                    
-                    <button type="submit">Login</button>
-
-                </form>
-            </div>
-
-            <div id="photo">
-                <img src="../img/frfef.png">
-            </div>
-
-        </section>
-
     </main>
 
     <footer>
@@ -128,8 +81,8 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="../js/signin.js"></script>
-    <script src="../js/script.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/js/product.js"></script>
     
 </body>
 </html>

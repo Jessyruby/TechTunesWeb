@@ -13,23 +13,30 @@
     
     <header>
 
-        <i class="bi-headphones"></i>
+        <img src="/img/headphones.png" class="bi-headphones">
         
         <nav class="menu">
             <ul>
                 <li id="Home"><a href="../pages/index.html">Home</a></li>
-                <li id="Products"><a href="">Products</a></li>
-                <li id="AboutUs"><a href="">About Us</a></li>
-                <li id="Contact"><a href="">Contact</a></li>
-                <li><a id="MyAccount" href="../pages/signin.html">Sign In</a></li>
-                <li id="user-info">
-                    <i class="bi bi-person-circle" onclick="buttonDisplay()"></i>
-                    <span id="display">
-                        <p>Logoup</p>
-                        <i class="bi bi-x-circle"></i>
-                    </span>
-                </li>
+                <li id="Products"><a href="../pages/index.html"">Products</a></li>
+                <li id="AboutUs"><a href="../pages/index.html"">About Us</a></li>
+                <li id="Contact"><a href="../pages/index.html"">Contact</a></li>
             </ul>
+
+            <div class="MyAccount"><a id="MyAccount" href="../pages/signin.html">Sign In</a></div>
+
+            <div id="user-info">
+                <i class="bi bi-person" id="usericon" ></i>
+                <span id="display">
+                    <p>Logoup</p>
+                    <i class="bi bi-x-circle"></i>
+                </span>
+            </div>
+
+            <div id="cart">
+                <a href="/pages/cart.html"><i class="bi-cart2"></i></a>
+                <span>0</span>
+            </div>
         </nav>
 
     </header>
@@ -142,7 +149,7 @@
 
             <div id="footer-logo">
                 <h1 class="logo-title">TechTunes</h1>
-                <i class="bi-headphones"></i>
+                <img src="/img/headphones.png" class="bi-headphones">
             </div>
 
             <p>Tech Tunes is dedicated to bringing you the latest and greatest in audio technology. Our mission is to provide an unparalleled listening experience with cutting-edge designs and innovative features.</p>
